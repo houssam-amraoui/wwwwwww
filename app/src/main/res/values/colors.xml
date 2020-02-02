@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ********* CURRENT APP MAIN COLOR - IF YOU WANT, YOU CAN CHANGE IT ********* -->
+    <color name="Main_Color">#0d7fc7</color>
+
+
+
+
+    <!-- ********* CURRENT APP BACKGROUND AND SECOND COLOR - IF YOU WANT, YOU CAN CHANGE IT ********* -->
+    <color name="main_background">#ABDDFF</color>
+    <color name="main_background_soft">#8094D2FF</color>
+
+
+
+
+    <!-- ********* DON'T CHANGE IT !!! ********* -->
+    <color name="colorPrimary">@color/Main_Color</color>
+    <color name="colorPrimaryDark">@color/Main_Color</color>
+    <color name="colorAccent">@color/Main_Color</color>
+
+
+</resources>

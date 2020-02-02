@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "369279583939",
+    "firebase_url": "https://mobileapps-37fff.firebaseio.com",
+    "project_id": "mobileapps-37fff",
+    "storage_bucket": "mobileapps-37fff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369279583939:android:0447169c740f7f23650476",
+        "android_client_info": {
+          "package_name": "t3aarof.banat2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369279583939-eofql4152rf0ghie53cdnhm6p3bfgoka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkQG7dLx_kBLttgfpXaVUxX3QW29bbA9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369279583939-eofql4152rf0ghie53cdnhm6p3bfgoka.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
