@@ -92,6 +92,8 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private String Tempp="pp";
+
     DatabaseReference mDatabase,mDatabase2,mDatabase3,mDatabase4,mDatabase5,mDatabase6,mDatabase7;
 
     SharedPreferences SplashScreenSharedPrefs,CounterSharedPrefs;
@@ -1427,8 +1429,13 @@ public class MainActivity extends AppCompatActivity
         LiveWebView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-
-                ShowIntersAds();
+                if (event.getAction() == MotionEvent.ACTION_UP){
+                    if(!Tempp.equals(LiveWebView.getUrl().toString())){
+                        Toast.makeText(MainActivity.this,  LiveWebView.getUrl(), Toast.LENGTH_SHORT).show();
+                        ShowIntersAds();
+                        Tempp = LiveWebView.getUrl().toString();
+                    }
+                }
                 return false;
             }
         });
@@ -1436,9 +1443,13 @@ public class MainActivity extends AppCompatActivity
         mySwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                                                       @Override
                                                       public void onRefresh() {
-
-                                                          LiveWebView.reload();
-                                                          mySwipeRefreshLayout.setRefreshing(false);
+                                                          new Handler().postDelayed(new Runnable() {
+                                                              @Override
+                                                              public void run() {
+                                                                  LiveWebView.reload();
+                                                                  mySwipeRefreshLayout.setRefreshing(false);
+                                                              }
+                                                          },1000);
                                                       }
                                                   }
         );
